@@ -1,0 +1,108 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: #fff;
+  section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+address{
+  font-family: "Raleway", sans-serif;
+}
+.carousel {
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  .carousel-inner {
+    height: 65vh;
+
+    .carousel-item {
+      height: 65vh;
+      .carousel-caption{
+        position: relative;
+        backdrop-filter: blur(4px);
+        margin: auto;
+        display: flex;
+        width: fit-content;
+        right: unset;
+        left: unset;
+        padding: 14px;
+      }
+      &.active{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .carousel1 {
+      background: url("../images/ttc/hero.jpg") no-repeat center;
+      background-size: cover;
+    }
+    .carousel2 {
+      background: url("../images/ttc/girl.jpg") no-repeat center;
+      background-size: cover;
+    }
+    .carousel3 {
+      background: url("../images/ttc/unhappy.jpg") no-repeat center;
+      background-size: cover;
+    }
+    .carousel4 {
+      background: url("../images/ttc/beach.jpg") no-repeat center;
+      background-size: cover;
+    }
+  }
+}
+
+nav ul li {
+  text-transform: capitalize;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-around;
+  width: 74%;
+  padding: 50px 14px;
+  @media screen and (min-width: 768px) {
+    width: 74%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    margin: auto;
+  }
+  .footer-item {
+    text-align: center;
+    ul{
+      list-style-type: none;
+    }
+    li {
+      padding: 8px;
+    }
+    a {
+      color: rgb(235, 235, 31);
+    }
+  }
+}
+
+@import "neuro.scss";
+@import "tcc.scss";
+@import "timeline.scss";
+@import "for-who.scss";
+@import "honoraires.scss";
+@import "references.scss";
+@import "formations/base";

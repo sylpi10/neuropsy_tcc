@@ -1,0 +1,49 @@
+.organisme-wrapper{
+    background-color: rgba(202, 180, 6, .1);
+  .organisme-container{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #ccc;
+
+    .contact-wrapper {
+      h3 {
+        display: flex;
+        align-items: center;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      .text {
+        width: 60%;
+      }
+      .contact-wrapper {
+        width: 30%;
+        h3{
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      .text, .contact-wrapper {
+        width: 100%;
+      }
+    }
+  }
+
+  .reclamation-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    align-items: flex-start;
+    .text{
+      @media screen and (min-width: 768px) {
+        width: 70%;
+      }
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+}
