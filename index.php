@@ -50,6 +50,9 @@ include "head.php"; ?>
   </a>
 </div>
 
+<div class="home-organisme">
+    <h2>Organisme de formation "Psycho-parent-Alp"</h2>
+</div>
 
 <?php include "footer.php"; ?>
 

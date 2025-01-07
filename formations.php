@@ -106,29 +106,36 @@
         <hr>
 
         <div class="text proposed-formations">
-            <h3>Les formations et interventions proposée</h3>
-           <p> <b>Les formations collectives à destination des parents/proches aidants:</b> Ces formations sont ouvertes à tout parent ou proche aidant d’un enfant/adolescent/adulte en
-            situation de handicap ou présentant des particularités au quotidien en lien avec la thématique proposée et les prérequis. Elles se tiennent dans des salles de formations
-            adaptés au nombre de stagiaire accueillis, et aux formations proposées. Formation de partout en France. L’offre de formation est réactualisée tous les ans. Voir formations cidessus.
-           </p>
-            <p>(Exemple à GAP : Salle du foyer jeunes travailleurs ou salle Havvah) ou dans d’autres villes.</p>
+            <div class="text-wrapper">
+               <h3>Les formations et interventions proposée</h3>
+              <div class="first-para">
+                  <p class="para"> <b>Les formations collectives à destination des parents/proches aidants:</b> Ces formations sont ouvertes à tout parent ou proche aidant d’un enfant/adolescent/adulte en
+                      situation de handicap ou présentant des particularités au quotidien en lien avec la thématique proposée et les prérequis. Elles se tiennent dans des salles de formations
+                      adaptés au nombre de stagiaire accueillis, et aux formations proposées. Formation de partout en France. L’offre de formation est réactualisée tous les ans. Voir formations cidessus.
+                      <br><br>
+                    (Exemple à GAP : Salle du foyer jeunes travailleurs ou salle Havvah) ou dans d’autres villes.</p>
+                  <img src="assets/images/formation/alps_pic3.jpg" alt="photo de montagne" width="500" height="260">
+              </div>
 
-            <p><b>Les formations collectives à destination des professionnels:</b> Ces formations sont ouvertes à tout professionnel du secteur médico-social, selon les thématiques et les pré-
-                requis. Elles se tiennent dans des salles de formations adaptés au nombre de stagiaire accueillis, et aux formations proposées. Formation de partout en France. L’offre de
-                formation est réactualisée tous les ans. Voir les formations ci-dessus</p>
-            <p>(Exemple à GAP : Salle du foyer jeunes travailleurs ou salle Havvah) ou dans d’autres villes</p>
 
-            <p>
-                <b>Les formations sur site:</b> Ces formations se tiennent dans vos locaux. Elles s’adressent à tout ou partie de l’équipe professionnelle, en fonction des thématiques choisies etdes pré-requis.
-                <br>
-                Ces formations s’appuient sur un réseau de formateurs·rices qualifié·es. <br>
-                Si vous avez identifié un besoin spécifique de formation ou que vous avez une idée ou un projet encore en réflexion, N’HESITEZ PAS, Contactez-nous pour que l’on étudie
-                ensemble vos besoins et vos attentes afin de construite une formation sur mesure. Partout en France.
-            </p>
-            <p> Ces formations ont lieu dans les salles mises à disposition par les institutions</p>
-            <p><b>Les analyses de la pratique professionnelle:</b> Rendues obligatoire pour toutes les crèches, et pertinente dans toutes les institutions, ces temps d’analyses des pratiques
-                professionnelles s'adressent à tous les membres de l'équipe. Ces séances sont animées par une professionnelle, psychologue, extérieure à la structure et sans lien
-                hiérarchique avec ses membres.</p>
+               <p><b>Les formations collectives à destination des professionnels:</b> Ces formations sont ouvertes à tout professionnel du secteur médico-social, selon les thématiques et les pré-
+                   requis. Elles se tiennent dans des salles de formations adaptés au nombre de stagiaire accueillis, et aux formations proposées. Formation de partout en France. L’offre de
+                   formation est réactualisée tous les ans. Voir les formations ci-dessus</p>
+               <p>(Exemple à GAP : Salle du foyer jeunes travailleurs ou salle Havvah) ou dans d’autres villes</p>
+
+               <p>
+                   <b>Les formations sur site:</b> Ces formations se tiennent dans vos locaux. Elles s’adressent à tout ou partie de l’équipe professionnelle, en fonction des thématiques choisies etdes pré-requis.
+                   <br>
+                   Ces formations s’appuient sur un réseau de formateurs·rices qualifié·es. <br>
+                   Si vous avez identifié un besoin spécifique de formation ou que vous avez une idée ou un projet encore en réflexion, N’HESITEZ PAS, Contactez-nous pour que l’on étudie
+                   ensemble vos besoins et vos attentes afin de construite une formation sur mesure. Partout en France.
+               </p>
+               <p> Ces formations ont lieu dans les salles mises à disposition par les institutions</p>
+               <p><b>Les analyses de la pratique professionnelle:</b> Rendues obligatoire pour toutes les crèches, et pertinente dans toutes les institutions, ces temps d’analyses des pratiques
+                   professionnelles s'adressent à tous les membres de l'équipe. Ces séances sont animées par une professionnelle, psychologue, extérieure à la structure et sans lien
+                   hiérarchique avec ses membres.</p>
+           </div>
+
         </div>
 
     </div>

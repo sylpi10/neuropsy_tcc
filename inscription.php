@@ -12,7 +12,8 @@
 
         <div class="text">
             <h4 class="text-title">1 inscription</h4>
-            <p>- Remplir le bulletin d’inscription (en bas de page) et le renvoyer à <a href="mailto:emmanuellemir.psy@gmail.com">emmanuellemir.psy@gmail.com</a> </p>
+            <p>- Remplir le bulletin d’inscription à télécharcher : <a class="download-link" href="#" download> <i class="fas fa-download"></i> Télécharger le bulletin</a> </p>
+                <p>et le renvoyer à <a href="mailto:emmanuellemir.psy@gmail.com">emmanuellemir.psy@gmail.com</a> </p>
             <p>OU <br>
                 - Par courrier à :
                 <address>
@@ -67,6 +68,8 @@
                 Evaluation de l’acquisition de compétences. Après la formation, questionnaire en ligne J+90 jours envoyé aux
                 participants et à l’employeur portant sur les acquis issus de la formation. </p>
         </div>
+        
+        
 
     </div>
     </div>
