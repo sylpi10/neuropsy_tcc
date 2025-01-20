@@ -27,7 +27,7 @@ include "head.php"; ?>
 <section id="les-techniques" class="techniques techniques1 ttc-section">
 
     <h2 class="shadow">LES TECHNIQUES</h2>
-    <div class="text ttc-area">
+    <div class="text ttc-area techniques-text">
         <p>
             Les techniques des TCC sont souvent utilisées de façon simultanée. C'est-à-dire que l’on intervient en même temps avec des techniques cognitives, comportementales et émotionnelles. Pour les enfants les techniques comportementales et émotionnelles sont privilégiées.
         </p>

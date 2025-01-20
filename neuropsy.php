@@ -26,7 +26,7 @@ include "head.php"; ?>
     <section id="" class="neuro-section neuro-who">
 
         <div class="text text1 who">
-            <ul class="tilesWrap">
+            <ul class="tilesWrap who-content">
                 <li>
                     <p>Quand mon enfant est en échec scolaire</p>
                 </li>
@@ -85,10 +85,7 @@ include "head.php"; ?>
         </div>
 
         <div class="text container">
-            <h3>
-                les bilans psychométriques et neuropsychologiques sont une
-                série de tests qui ont pour objectif de:
-            </h3>
+            <h3>les bilans psychométriques et neuropsychologiques sont une série de tests qui ont pour objectif de: </h3>
             <div class="wrapper">
                 <div class="bilans">
                     <p> Participer au diagnostic</p>

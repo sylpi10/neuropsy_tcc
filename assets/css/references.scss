@@ -16,6 +16,9 @@
     margin-top: 60px;
     padding: 60px;
     width: 100%;
+    @media screen and (max-width: 768px) {
+      padding: 20px;
+    }
     h4, h3{
       color: #0e1d49;
       width: fit-content;
@@ -69,8 +72,12 @@
           margin-right: 6px;
           font-size: 1.4rem;
         }
+
       }
 
+      hr{
+        margin-bottom: 0;
+      }
 
     }
 

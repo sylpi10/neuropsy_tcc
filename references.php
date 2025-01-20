@@ -61,13 +61,9 @@ include "head.php"; ?>
                 <h3>Expériences: </h3>
                 <h5>Actuelle:</h5>
                 <ul>
+                    <li>Psychologue en libérale et formatrice.</li>
 
-                    <li>
-                        Problématiques de délinquances, addictives et sociales. Secteur social et judiciaire. (ADSEA 05)
-                    </li>
-                    <li>
-                        Supervision d'équipe intervenant auprès d'un public présentant un trouble du spectre de l'autisme. (ASSOCIATION POSITIV'ETRE)
-                    </li>
+                    <li>Gérante et fondatrice de l'organisme de formations "Psycho Parent Alp"</li>
                 </ul>
             </div>
         </div>
@@ -76,6 +72,12 @@ include "head.php"; ?>
             <div class="content">
                 <h5>Antérieures :</h5>
                 <ul>
+                    <li>
+                        Problématiques de délinquances, addictives et sociales. Secteur social et judiciaire. (ADSEA 05)
+                    </li>
+                    <li>
+                        Supervision d'équipe intervenant auprès d'un public présentant un trouble du spectre de l'autisme. (ASSOCIATION POSITIV'ETRE)
+                    </li>
                     <li>
                         Psychologue au CEFP, adolescents et jeunes adultes (16-20 ans) placés/orientés par la PJJ et l'ASE.
                     </li>
@@ -94,7 +96,7 @@ include "head.php"; ?>
         <hr class="mx-5">
         <h4>Immatriculations : </h4>
         <p> Numéro ADELI : 059301895 </p>
-        <p> SIREN : 812 767 143 000 33 </p>
+        <p> SIRET : 812 767 143 000 41 </p>
     </div>
 </div>
 

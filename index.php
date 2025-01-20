@@ -51,7 +51,7 @@ include "head.php"; ?>
 </div>
 
 <div class="home-organisme">
-    <h2>Organisme de formation "Psycho-parent-Alp"</h2>
+    <h2>Organisme de formation "Psycho-Parent-Alp"</h2>
 </div>
 
 <?php include "footer.php"; ?>

@@ -12,6 +12,10 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 62px;
+  }
+ .carousel,.references-hero, .formation-container, .hero{
+    margin-top: 62px;
   }
 }
 h1,
@@ -31,7 +35,6 @@ h2, h3{
   align-items: center;
   .carousel-inner {
     height: 65vh;
-
     .carousel-item {
       height: 65vh;
       .carousel-caption{
@@ -43,11 +46,21 @@ h2, h3{
         right: unset;
         left: unset;
         padding: 14px;
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+          backdrop-filter: blur(12px);
+        }
       }
       &.active{
         display: flex;
         align-items: center;
         justify-content: center;
+        @media screen and (max-width: 768px) {
+          align-items: flex-end;
+          .carousel-caption{
+            margin-bottom: -20px !important;
+          }
+        }
       }
     }
     .carousel1 {
@@ -74,6 +87,11 @@ nav ul li {
   a.formation-navlink{
     color: #934b05 !important;
   }
+  a{
+    @media screen and (max-width: 460px) {
+      font-size: .85rem;
+    }
+  }
 }
 
 .home-organisme{
@@ -85,6 +103,10 @@ nav ul li {
     margin-top: 60px;
     color: #0e1d49;
     font-size: 2.4rem;
+    @media screen and (max-width: 768px) {
+      padding: 20px;
+      text-align: center;
+    }
   }
 }
 
@@ -123,4 +145,5 @@ nav ul li {
 @import "for-who.scss";
 @import "honoraires.scss";
 @import "references.scss";
+@import "cabinet";
 @import "formations/base";

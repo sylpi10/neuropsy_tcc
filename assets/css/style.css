@@ -15,6 +15,10 @@ body section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 62px;
+}
+body .carousel, body .references-hero, body .formation-container, body .hero {
+  margin-top: 62px;
 }
 
 h1,
@@ -51,10 +55,24 @@ h2, h3 {
   left: unset;
   padding: 14px;
 }
+@media screen and (max-width: 768px) {
+  .carousel .carousel-inner .carousel-item .carousel-caption {
+    flex-direction: column;
+    backdrop-filter: blur(12px);
+  }
+}
 .carousel .carousel-inner .carousel-item.active {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .carousel .carousel-inner .carousel-item.active {
+    align-items: flex-end;
+  }
+  .carousel .carousel-inner .carousel-item.active .carousel-caption {
+    margin-bottom: -20px !important;
+  }
 }
 .carousel .carousel-inner .carousel1 {
   background: url("../images/ttc/hero.jpg") no-repeat center;
@@ -79,6 +97,11 @@ nav ul li {
 nav ul li a.formation-navlink {
   color: #934b05 !important;
 }
+@media screen and (max-width: 460px) {
+  nav ul li a {
+    font-size: 0.85rem;
+  }
+}
 
 .home-organisme {
   display: flex;
@@ -90,6 +113,12 @@ nav ul li a.formation-navlink {
   margin-top: 60px;
   color: #0e1d49;
   font-size: 2.4rem;
+}
+@media screen and (max-width: 768px) {
+  .home-organisme h2 {
+    padding: 20px;
+    text-align: center;
+  }
 }
 
 .foot {
@@ -149,9 +178,13 @@ nav ul li a.formation-navlink {
   height: 80vh;
   background-size: cover;
   display: flex;
-  min-width: 450px;
   justify-content: center;
   flex: 1 1 600px;
+}
+@media (min-width: 760px) {
+  .neuropsy .neuro-section .img {
+    min-width: 450px;
+  }
 }
 .neuropsy .neuro-section .text {
   width: 50%;
@@ -163,6 +196,16 @@ nav ul li a.formation-navlink {
   font-size: 1.3rem;
   min-width: 450px;
   flex: 1 1 600px;
+}
+@media (max-width: 760px) {
+  .neuropsy .neuro-section .text {
+    margin-top: 40px;
+    padding: 0;
+    min-width: unset;
+  }
+  .neuropsy .neuro-section .text .wrapper {
+    justify-content: unset;
+  }
 }
 .neuropsy .neuro-section .text h3 {
   text-transform: capitalize;
@@ -176,6 +219,11 @@ nav ul li a.formation-navlink {
   width: 80%;
   margin: auto;
 }
+@media (max-width: 760px) {
+  .neuropsy .neuro-section .text p {
+    width: 100%;
+  }
+}
 .neuropsy .neuro-who {
   flex-wrap: wrap-reverse;
 }
@@ -184,6 +232,24 @@ nav ul li a.formation-navlink {
   justify-content: space-around;
   width: 90%;
   margin: auto;
+  padding-left: 0;
+}
+.neuropsy .neuro-who .who > ul li {
+  padding-left: 0;
+}
+@media (max-width: 760px) {
+  .neuropsy .neuro-who .who > ul {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .neuropsy .neuro-who .who > ul li {
+    width: 74%;
+    max-width: unset;
+  }
+  .neuropsy .neuro-who .who > ul li::before {
+    transform: skew(1deg, 1deg);
+  }
 }
 .neuropsy .img {
   background: url("../images/neuro/for-who.jpg") no-repeat top;
@@ -203,12 +269,26 @@ nav ul li a.formation-navlink {
   width: 80% !important;
   font-size: 1.4rem !important;
 }
+@media (max-width: 760px) {
+  .neuro-bilan .text h3 {
+    width: 100% !important;
+    padding: 0 6px;
+    margin-bottom: 30px;
+  }
+}
 .neuro-bilan .text p {
   font-size: 1rem;
 }
 .neuro-bilan .bilans {
-  width: 90%;
+  width: 100%;
   margin: auto;
+}
+@media (max-width: 760px) {
+  .neuro-bilan .bilans {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+  }
 }
 .neuro-bilan .bilans p {
   font-size: 1rem;
@@ -269,25 +349,41 @@ nav ul li a.formation-navlink {
   background: url("../images/neuro/deroulement.png") no-repeat center;
 }
 
-.neuro-duration {
+.neuropsy .neuro-duration {
   display: flex;
   justify-content: center;
 }
-.neuro-duration .img {
+.neuropsy .neuro-duration .img {
   background: url("../images/neuro/duration.jpg") no-repeat center;
 }
+@media (max-width: 760px) {
+  .neuropsy .neuro-duration .text {
+    min-height: unset;
+    margin-top: 30px;
+  }
+  .neuropsy .neuro-duration .text p {
+    padding: 0 20px;
+    width: 100%;
+  }
+}
 
-.neuro-remediation {
+.neuropsy .neuro-remediation {
   display: flex;
   flex-wrap: wrap-reverse;
 }
-.neuro-remediation .img {
+.neuropsy .neuro-remediation .img {
   background: url("../images/neuro/emma8.png") no-repeat center;
   width: 50%;
 }
-.neuro-remediation .text p {
+.neuropsy .neuro-remediation .text p {
   padding: 24px 0;
   font-size: 1rem;
+}
+@media (max-width: 760px) {
+  .neuropsy .neuro-remediation .text p {
+    padding: 20px;
+    width: 100%;
+  }
 }
 
 /*ttc*/
@@ -318,13 +414,14 @@ nav ul li a.formation-navlink {
   padding: 60px;
   font-size: 1.2rem;
 }
-
-@media (max-width: 760px) {
-  .ttc-description {
-    width: 90%;
-    padding: 30px;
+@media (max-width: 768px) {
+  .ttc-description,
+  .category-description {
+    width: 100%;
+    padding: 20px;
   }
 }
+
 /* sections*/
 .ttc-section {
   display: flex;
@@ -342,8 +439,7 @@ nav ul li a.formation-navlink {
 .ttc-section h2 {
   text-align: center;
   text-transform: uppercase;
-  margin: auto;
-  margin-top: 60px;
+  margin: 60px auto auto auto;
   position: absolute;
   background-color: #333;
   color: #fff;
@@ -355,7 +451,7 @@ nav ul li a.formation-navlink {
   font-size: 1.4rem;
 }
 .ttc-section .ttc-area {
-  flex: 1 1 600px;
+  flex: 1 1 440px;
 }
 .ttc-section .img {
   background-size: 100% auto;
@@ -424,16 +520,9 @@ nav ul li a.formation-navlink {
 .techniques .detail:nth-child(2),
 .techniques .detail:nth-child(3) {
   height: 45%;
-  flex: 1 1 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-@media (max-width: 900px) {
-  .techniques .text p {
-    width: 100%;
-    margin: 40px;
-  }
 }
 
 .technique-comportementales,
@@ -454,6 +543,19 @@ nav ul li a.formation-navlink {
   font-size: 1rem !important;
   padding: 20px !important;
   width: 100%;
+}
+@media (max-width: 768px) {
+  .technique-comportementales p.technique-comportementales-text,
+  .technique-comportementales p.technique-cognitives-text,
+  .technique-comportementales p.autres-techniques-text,
+  .technique-cognitives p.technique-comportementales-text,
+  .technique-cognitives p.technique-cognitives-text,
+  .technique-cognitives p.autres-techniques-text,
+  .autres-techniques p.technique-comportementales-text,
+  .autres-techniques p.technique-cognitives-text,
+  .autres-techniques p.autres-techniques-text {
+    margin: 40px 0;
+  }
 }
 
 .technique-cognitives,
@@ -480,13 +582,19 @@ nav ul li a.formation-navlink {
   text-align: left !important;
   margin-left: 30px;
 }
-.techniques2 .text .detail::nth-child(1) {
+.techniques2 .text .detail:nth-child(1) {
   width: 100%;
 }
 
 .ttc-section .text {
   animation-duration: 1s;
   animation-name: slidein;
+}
+@media (max-width: 768px) {
+  .ttc-section .text.techniques-text p {
+    width: 100%;
+    padding: 20px;
+  }
 }
 
 /*for who ?*/
@@ -514,13 +622,14 @@ nav ul li a.formation-navlink {
   color: #333;
   flex: 1 1 330px;
   border: solid 1px rgba(33, 33, 33, 0.1);
+  position: relative;
 }
-.who .text-wrap:hover {
+.who .text-wrap:hover, .who .text-wrap:active, .who .text-wrap:focus {
   border: solid 1px #333;
   background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
 }
-.who .text-wrap:hover .definition {
+.who .text-wrap:hover .definition, .who .text-wrap:active .definition, .who .text-wrap:focus .definition {
   z-index: 300;
   visibility: visible;
   transition: opacity ease 1s;
@@ -531,14 +640,26 @@ nav ul li a.formation-navlink {
   transition: all ease 0.7s;
   visibility: hidden;
   background-color: rgb(253, 248, 248);
-  width: 40%;
   position: absolute;
-  padding: 16px 34px;
-  margin-top: 60px;
-  margin-left: 20px;
+  padding: 16px;
   color: #333;
+  bottom: 100%;
   text-align: left;
-  border: solid 6px #333;
+  border: solid 6px #cab406;
+}
+@media (min-width: 768px) {
+  .who .definition {
+    width: 760px;
+  }
+}
+@media (max-width: 768px) {
+  .who .definition {
+    width: 100%;
+    bottom: 100%;
+    margin-left: 0;
+    left: 0;
+    right: 0;
+  }
 }
 .who .definition p {
   width: 100%;
@@ -560,10 +681,21 @@ nav ul li a.formation-navlink {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 768px) {
+  .who .text2 .detail {
+    padding: 20px;
+  }
+}
 .who .text2 .detail h6 {
   font-size: 1.4rem;
   width: 80%;
   margin: auto;
+}
+@media (max-width: 768px) {
+  .who .text2 .detail h6 {
+    width: 100%;
+    padding: 0 20px;
+  }
 }
 .who .text2 .detail ul {
   margin-top: 60px;
@@ -577,6 +709,11 @@ nav ul li a.formation-navlink {
   width: 80%;
   margin: 0 auto;
   flex: 1 1;
+}
+@media (max-width: 768px) {
+  .who .text2 .detail ul .text-wrap {
+    width: 100%;
+  }
 }
 
 /*déroulement*/
@@ -749,31 +886,23 @@ body {
   right: 0;
 }
 
-@media screen and (max-width: 768px) {
-  .timeline::before {
-    left: 50px;
+@media screen and (max-width: 460px) {
+  .timeline {
+    width: 92%;
+    margin: auto;
   }
-  .timeline .timeline-img {
-    left: 50px;
+  .timeline .timeline-item {
+    width: 100%;
+    margin: auto;
   }
-  .timeline .timeline-content {
-    max-width: 100%;
-    width: auto;
-    margin-left: 70px;
+  .timeline .timeline-item .timeline-content p {
+    width: 100%;
   }
-  .timeline .timeline-item:nth-child(even) .timeline-content {
-    float: none;
+  .timeline .timeline-item:nth-child(odd) .timeline-content p {
+    padding: 10px 40px 10px 14px !important;
   }
-  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
-    content: "";
-    position: absolute;
-    border-style: solid;
-    width: 0;
-    height: 0;
-    top: 30px;
-    left: -15px;
-    border-width: 10px 15px 10px 0;
-    border-color: transparent #f5f5f5 transparent transparent;
+  .timeline .timeline-item:nth-child(even) .timeline-content p {
+    padding: 10px 14px 10px 40px !important;
   }
 }
 .tilesWrap {
@@ -859,6 +988,7 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 20px;
+  padding-left: 0;
 }
 .honoraires ul li {
   margin-bottom: 40px;
@@ -889,71 +1019,6 @@ body {
   padding: 6px;
 }
 
-.cabinet-hero {
-  height: 60vh;
-  background: url("../images/cabinet.jpg") no-repeat center;
-}
-
-.cabinet .container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 120px auto;
-  font-size: 1.4rem;
-}
-.cabinet .container .address-wrap {
-  width: 40%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 12px;
-  min-width: 400px;
-}
-.cabinet .container .address-wrap .address {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.cabinet .container .address-wrap i {
-  font-size: 3rem;
-}
-.cabinet .container .consult {
-  min-width: 400px;
-  width: 40%;
-}
-.cabinet .container .consult ul {
-  list-style-type: square;
-}
-
-.maps {
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  width: 100%;
-  gap: 30px;
-}
-.maps .frame {
-  width: 50%;
-}
-.maps .rdv {
-  width: 43%;
-  text-align: left;
-}
-.maps .rdv ul {
-  list-style-type: none;
-  margin-top: 40px;
-  margin-left: -30px;
-}
-.maps .rdv li {
-  margin-top: 30px;
-}
-.maps .rdv li i,
-.maps .rdv li a {
-  color: rgb(15, 76, 100);
-}
-
 .references-hero {
   background-image: url("../images/graduation.jpg");
   height: 100vh;
@@ -973,6 +1038,11 @@ body {
   margin-top: 60px;
   padding: 60px;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .references-hero .diplomas {
+    padding: 20px;
+  }
 }
 .references-hero .diplomas h4, .references-hero .diplomas h3 {
   color: #0e1d49;
@@ -1029,6 +1099,9 @@ body {
   margin-right: 6px;
   font-size: 1.4rem;
 }
+.references-hero .diplomas .diplomas-list hr {
+  margin-bottom: 0;
+}
 .references-hero .diplomas .experience-item {
   border: solid 1px #cab406;
   transform: skew(1.6deg, 1.6deg);
@@ -1053,6 +1126,109 @@ body {
 }
 .references-hero hr {
   margin-bottom: 40px;
+}
+
+.cabinet-hero {
+  height: 60vh;
+  background: url("../images/cabinet.jpg") no-repeat center;
+}
+
+.cabinet .container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 120px auto;
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 768px) {
+  .cabinet .container {
+    flex-direction: column;
+    margin: 40px auto;
+    align-items: center;
+  }
+}
+.cabinet .container .address-wrap {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 12px;
+  min-width: 400px;
+}
+.cabinet .container .address-wrap .address {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cabinet .container .address-wrap i {
+  font-size: 3rem;
+}
+.cabinet .container .consult {
+  min-width: 400px;
+  width: 40%;
+}
+.cabinet .container .consult ul {
+  list-style-type: square;
+}
+
+.maps {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+}
+.maps .frame {
+  width: 50%;
+}
+.maps .rdv {
+  width: 43%;
+  text-align: left;
+}
+.maps .rdv ul {
+  list-style-type: none;
+  margin-top: 40px;
+  margin-left: -30px;
+}
+.maps .rdv li {
+  margin-top: 30px;
+}
+.maps .rdv li i,
+.maps .rdv li a {
+  color: rgb(15, 76, 100);
+}
+
+@media screen and (max-width: 768px) {
+  .maps {
+    flex-direction: column;
+    align-items: center;
+  }
+  .maps, .frame {
+    width: 100% !important;
+  }
+  .maps .rdv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .maps .rdv ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
 .formation-container {
@@ -1115,6 +1291,8 @@ body {
   border: solid 1px #cab406;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  min-width: fit-content;
+  white-space: nowrap;
 }
 .formation-container .inscription-wrapper .parcours-wrapper .download-link i {
   color: #0e1d49;
@@ -1193,6 +1371,11 @@ body {
   cursor: pointer;
   position: relative;
   margin: 0 auto;
+}
+@media screen and (max-width: 540px) {
+  .formations-section .formation-content .formations-cards-wrapper .formation-card {
+    width: 90%;
+  }
 }
 .formations-section .formation-content .formations-cards-wrapper .formation-card:hover {
   box-shadow: rgba(0, 0, 0, 0.1) 0 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
@@ -1274,6 +1457,12 @@ body {
 }
 .formations-wrapper .proposed-formations .text-wrapper {
   padding: 40px 0;
+}
+@media screen and (max-width: 768px) {
+  .formations-wrapper .proposed-formations .text-wrapper img {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 .formations-wrapper .proposed-formations .first-para {
   display: flex;
